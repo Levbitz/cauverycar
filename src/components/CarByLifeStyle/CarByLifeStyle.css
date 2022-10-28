@@ -1,0 +1,26 @@
+.single_life_style {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.9) 15%,
+      rgba(0, 0, 0, 0.05) 50%,
+      rgba(0, 0, 0, 0.05) 85%
+    ),
+    url("https://d308ljkq6e62o1.cloudfront.net/img/iIOcHsv2Rxy4wmiUJ5VSGg/file.jpeg");
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  box-shadow: 0 25px 98px 0 rgb(0 0 0/10%) !important;
+  height: 250px;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.single_life_style_content {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}

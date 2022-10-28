@@ -1,0 +1,30 @@
+.page-footer {
+  /* background-image: url("../../lib/images/footer-bg-2.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+  /* height: 50vh; */
+  padding-top: 10vh;
+  background: #031b34;
+}
+
+.page-footer h5 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.page-footer ul {
+  margin-top: 10px;
+}
+
+.my_footer_link {
+  text-transform: capitalize;
+  margin: 10px 0px;
+}
+
+.my_footer_link :hover {
+  color: coral !important;
+  transition: 0.5s ease;
+}

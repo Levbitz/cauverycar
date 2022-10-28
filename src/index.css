@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize !important;
+
+  /* overflow-x: hidden !important; */
+}
+
+html {
+  overflow-x: hidden !important;
+}
+
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* overflow-y: scroll !important; */
+}
+
+h1 h2 h3 h4 h5 h6 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.levbitz_container {
+  width: 90%;
+  margin: auto;
+}
+
+.bottom_design {
+  background-color: red;
+  height: 2px;
+  width: 40px;
+}
+
+.fabian_inputshowcase_wrap {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.input-field.input-outlined > input {
+  border: 1px solid #ced4da;
+  /* padding: 12px 16px 14px; */
+  /* width: calc(100% - 2.5rem); */
+  float: none;
+  display: block;
+  border-radius: 4px;
+  transition: box-shadow, border-color 0.15s;
+  margin-top: -20px;
+  height: 42px;
+  background-color: #fff;
+}
+.input-field.input-outlined > input:focus:not([readonly]) {
+  border-color: #26a69b;
+  box-shadow: 0 1px 0 0px #26a69b;
+}
+.input-field.input-outlined > label {
+  left: 27px;
+  display: inline-flex;
+  width: auto !important;
+}
+.input-field.input-outlined > label.active {
+  background: white;
+  border-left: 4px solid white;
+  border-right: 4px solid white;
+  transform: translateY(-1.75rem);
+  top: 1rem;
+}
+
+.fabian_multiple_select {
+  border: 1px solid #ced4da;
+  padding-right: 10px;
+  height: 48px;
+  border-radius: 5px;
+  margin-top: -8px;
+}
+
+/* carosel*/
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 45%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  /* background: transparent; */
+  color: #fff;
+  background: none;
+  /* background: #fff !important; */
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  opacity: 1;
+  color: #fff !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* carousel */
+
+.btn {
+  background: #283593 !important;
+  border: none;
+}
+
+.levbitz_subtitle {
+  font-size: 30px;
+  font-weight: bold;
+  color: #283593;
+  margin-bottom: 10px;
+}

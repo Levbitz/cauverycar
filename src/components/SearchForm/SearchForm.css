@@ -1,0 +1,104 @@
+.lb_form_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  border: 2px #fff solid;
+  margin-top: 10px;
+  border-radius: 50px;
+}
+@media only screen and (max-width: 620px) {
+  .lb_form_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    border: 2px #fff solid;
+    margin-top: 15px;
+    border-radius: 50px;
+    margin-left: 30px;
+  }
+}
+
+.lb_form_wrap input {
+  border-bottom: none !important;
+  color: #fff;
+  padding-left: 5px;
+  text-align: center;
+  border: #fff solid 1px;
+}
+input:active {
+  border-bottom: none;
+}
+
+.lb_icon_wrap {
+  padding-left: 10px;
+  border: 1px teal solid;
+  line-height: 35px;
+  height: 32.6px;
+  padding-bottom: 5px !important;
+  /* border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px; */
+}
+
+.levbitz_search_result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100% !important;
+  height: 100%;
+
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.levbitz_search_result .inner {
+  width: 100%;
+}
+
+.search_result_title :hover {
+  cursor: pointer;
+}
+
+.lb_search_icon {
+  padding-right: 10px;
+}
+
+.nyoi_nyoi {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  margin: auto;
+  background: #011e32;
+  margin-top: 20px;
+  text-align: left !important;
+  width: 500px !important;
+  padding-left: 100px !important;
+  padding-right: 150px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .nyoi_nyoi {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    margin: auto;
+    background: #011e32;
+    margin-top: 120px;
+    color: #fff !important;
+    text-align: center !important;
+    width: 300px !important;
+    padding-left: 50px !important;
+    padding-right: 80px !important;
+  }
+
+  .lb_form_wrap input {
+    border-bottom: none !important;
+    color: #fff;
+    padding-left: 5px;
+    text-align: center;
+    border: none !important;
+    z-index: 3000 !important;
+  }
+}

@@ -1,0 +1,7 @@
+.about_wrap_showcase {
+  background-image: url(../../lib/images/about.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30vh;
+}

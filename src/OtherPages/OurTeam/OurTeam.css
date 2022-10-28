@@ -1,0 +1,16 @@
+.levbitz_team_showcase {
+  background-image: url("../../lib/images/team.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+}
+
+.user_wrap {
+  background-image: url("../../lib/images/svg/02.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  padding-top: 5vh;
+}

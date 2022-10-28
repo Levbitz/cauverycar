@@ -1,0 +1,41 @@
+.levbitz_slider_container {
+  padding-top: 25vh;
+  background-image: url(../../lib/images/scBg.png);
+  /* background-image: url("https://www.hondacarindia.com/content/desktop/images/offers/offers-banner-july-d.jpg"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 65vh;
+  box-shadow: #f8fbff;
+  /* box-shadow: inset 0 0 0 1000px rgba(33, 53, 165, 0.5);
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px; */
+}
+
+.levbitz_slider_container p {
+  margin-bottom: 10px;
+}
+
+.levbitz_slider_container h2 {
+  font-weight: bold !important;
+  font-size: 54px;
+  color: #fff !important;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 600px) {
+  .levbitz_slider_container {
+    min-height: 40vh !important;
+    padding-top: 15vh;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .levbitz_slider_container h2 {
+    font-size: 20px !important;
+  }
+  .levbitz_slider_container p {
+    font-size: 13px !important;
+    margin-bottom: 10px;
+  }
+}

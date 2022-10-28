@@ -1,0 +1,24 @@
+.levbitz_contact_showcase_wrap {
+  background-image: url("https://dw745fgl22f1q.cloudfront.net/images/desktop-contact-us.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 10vh;
+  padding-top: 10px;
+}
+
+.contact_content p {
+  margin: 10px 0px;
+}
+
+.levbitz_single_photo_wrap img {
+  height: 250px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .levbitz_single_photo_wrap img {
+    width: 100%;
+    height: auto;
+  }
+}

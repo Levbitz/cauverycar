@@ -1,0 +1,47 @@
+.promote_showcase {
+  /* background-image: url("../../assets/images/prom.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+  min-height: 30vh;
+}
+
+.promote_showcase h4 {
+  margin-top: 100px;
+}
+
+.activation_wrapper {
+  padding-top: 20vh;
+  /* padding-bottom: 40vh; */
+}
+
+.activation_wrapper h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 80px;
+}
+
+.price_selection_wrap {
+  border-radius: 10px;
+  padding: 10px 10px;
+  background-color: coral;
+  margin-bottom: 30px;
+}
+
+.price_selection_wrap h4 {
+  font-size: 28px;
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  font-weight: bold;
+}
+
+.freeAdd {
+  opacity: 0.9;
+}
+
+.freeAdd:hover {
+  cursor: pointer;
+  opacity: 1 !important;
+  transition: 1s ease-in-out;
+}

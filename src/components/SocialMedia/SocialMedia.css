@@ -1,0 +1,14 @@
+.levbitz_social_wrap {
+  width: 100%;
+  background-color: #e8e8e8;
+  margin-top: 50px;
+  margin-bottom: -20px;
+}
+
+.levbitz_social_icon {
+  margin-right: 20px;
+}
+
+.levbitz_social_icon:hover {
+  cursor: pointer !important;
+}
