@@ -91,8 +91,8 @@ input:active {
     width: 300px !important;
     padding-left: 50px !important;
     padding-right: 80px !important;
+    z-index: 200 !important;
   }
-
   .lb_form_wrap input {
     border-bottom: none !important;
     color: #fff;

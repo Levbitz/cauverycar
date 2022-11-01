@@ -93,13 +93,13 @@ function SearchForm() {
               <div className="col l1 offset-l1"></div>
               <div className="col l5 s10  nyoi_nyoi ">
                 {sam.length > 0 ? (
-                  sam.slice(0, 10).map((item, index) => {
+                  sam.slice(0, 6).map((item, index) => {
                     return (
                       <div
-                        onClick={() => {
-                          navigate(item.url).then(() => {
-                            setSearchTerm("");
-                          });
+                        onClick={async () => {
+                          const move = await navigate(item.url);
+
+                          const dead = await setSearchTerm("");
                         }}
                         style={{
                           height: 45,

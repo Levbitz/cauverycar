@@ -2,7 +2,7 @@ export const SeachQueries = [
   {
     title: "Maruti Suzuki",
 
-    url: `{/cat${"/maruti_suzuki"}`,
+    url: `/cat${"/maruti_suzuki"}`,
   },
 
   {

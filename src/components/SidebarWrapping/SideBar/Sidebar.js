@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components/macro";
 
 import * as FaIcons from "react-icons/fa";
@@ -13,8 +13,21 @@ const Sidebar = () => {
 
   const showSidebar = () => setSidebar(!sidebar);
 
+  useEffect(() => {
+    if (sidebar === false) {
+      document.body.style.overflowY = "scroll";
+    }
+    if (sidebar === true) {
+      document.body.style.overflowY = "hidden";
+    }
+  }, [sidebar]);
+
   return (
-    <>
+    <div
+      style={{
+        zindex: "9999 !important",
+      }}
+    >
       <IconContext.Provider value={{ color: "#fff" }}>
         <Nav>
           <NavMenuIcon onClick={showSidebar} className="lb_menuBg">
@@ -52,7 +65,7 @@ const Sidebar = () => {
           </SidebarWrap>
         </SidebarNav>
       </IconContext.Provider>
-    </>
+    </div>
   );
 };
 

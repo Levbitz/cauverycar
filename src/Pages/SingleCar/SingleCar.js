@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./SingleCar.css";
 import SideDetailBanner from "../../lib/images/sideDetailsBanner.png";
 import SimilarCars from "../../components/SimilarCars/SimilarCars";
@@ -10,6 +10,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Footer from "../../components/Footer/Footer";
+import emailjs from "@emailjs/browser";
 
 function SingleCar() {
   const { id } = useParams();
@@ -66,6 +67,30 @@ function SingleCar() {
   const [queryMail, setQueryMail] = useState("");
 
   const invalid = name === "" || number === "" || queryMail === "";
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_x8z7ftb",
+        "template_fzbaygb",
+        form.current,
+        "2Q89-dCQZNRAGX9wl"
+      )
+      .then(
+        (result) => {
+          // console.log(result.text);
+          alert("Message Submitted Successfully");
+          window.location.reload();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
   if (loading) {
     return <div>Loading...</div>;
@@ -329,47 +354,54 @@ function SingleCar() {
                 <p>Buy this car at best price directly from Cauvery Cars</p>
 
                 <div>
-                  <div class="row">
-                    <div class="input-field col l12 s12">
-                      <input
-                        onChange={(e) => setName(e.target.value)}
-                        id="first_name"
-                        type="text"
-                        class="validate"
-                      />
-                      <label for="first_name"> Name</label>
-                    </div>
-                    <div class="input-field col l12 s12">
-                      <input
-                        id="contact"
-                        type="text"
-                        onChange={(e) => setNumber(e.target.value)}
-                        class="validate"
-                      />
-                      <label for="contact">Contact</label>
-                    </div>
-                    <div class="input-field col l12 s12">
-                      <input
-                        id="email"
-                        onChange={(e) => setQueryMail(e.target.value)}
-                        type="text"
-                        class="validate"
-                      />
-                      <label for="email">Email</label>
-                    </div>
-                    <div>
-                      <small>
-                        Be assured! We never share your personal info without
-                        asking you
-                      </small>
-                    </div>
+                  <form ref={form} onSubmit={sendEmail}>
+                    <div class="row">
+                      <div class="input-field col l12 s12 hide">
+                        <input
+                          id="car"
+                          type="text"
+                          class="validate"
+                          name="car"
+                          value={title}
+                        />
+                        <label for="car"> Name</label>
+                      </div>
+                      <div class="input-field col l12 s12">
+                        <input
+                          id="first_name"
+                          type="text"
+                          class="validate"
+                          name="first_name"
+                        />
+                        <label for="first_name"> Name</label>
+                      </div>
+                      <div class="input-field col l12 s12">
+                        <input
+                          id="contact"
+                          type="text"
+                          class="validate"
+                          name="contact"
+                        />
+                        <label for="contact">Contact</label>
+                      </div>
+                      <div class="input-field col l12 s12">
+                        <input
+                          id="email"
+                          type="text"
+                          class="validate"
+                          name="email"
+                        />
+                        <label for="email">Email</label>
+                      </div>
+                      <div>
+                        <small>
+                          Be assured! We never share your personal info without
+                          asking you
+                        </small>
+                      </div>
 
-                    <div>
-                      <a
-                        href={`https://wa.me/919945564651?text=name is ${name}  , email is ${queryMail} and phone is ${number}  `}
-                      >
-                        <button
-                          disabled={invalid}
+                      <div>
+                        <input
                           className=" indigo darken-4 waves-effect waves-light white-text"
                           style={{
                             width: "100%",
@@ -378,12 +410,12 @@ function SingleCar() {
                             padding: "10px",
                             borderRadius: "3px",
                           }}
-                        >
-                          Test Drive
-                        </button>
-                      </a>
+                          type="submit"
+                          value="Test Drive"
+                        />
+                      </div>
                     </div>
-                  </div>
+                  </form>
                 </div>
               </div>
             </div>

@@ -35,6 +35,9 @@ function Navbar() {
   return (
     <>
       <nav
+        style={{
+          zIndex: 9000,
+        }}
         className={navbg ? " z-depth-0  lb_active " : " z-depth-0 lb_nav_wrap"}
       >
         <div className="container-fluid">

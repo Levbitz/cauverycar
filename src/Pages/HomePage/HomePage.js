@@ -144,7 +144,7 @@ function HomePage() {
           </div>
         </div>
 
-        <OurTeam />
+        {/* <OurTeam />*/}
       </div>
 
       <Footer />

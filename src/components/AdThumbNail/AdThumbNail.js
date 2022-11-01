@@ -33,7 +33,7 @@ const AdThumbNail = ({ item }) => {
     },
   };
   return (
-    <div key={item.id} className="col l3 m4 s6 levbitz_thumbNail">
+    <div sr key={item.id} className="col l3 m4 s6 levbitz_thumbNail">
       <div
         onClick={() => {
           navigate(`/single_car/${item.id}`);
@@ -41,9 +41,10 @@ const AdThumbNail = ({ item }) => {
         className="card z-depth-0 levbitz_card"
         style={{
           borderRadius: "15px",
+          zIndex: "-3000 !important",
         }}
       >
-        <div className="card-image">
+        <div className="card-image z-depth-0">
           {images ? (
             <>
               <Slider {...settings}>

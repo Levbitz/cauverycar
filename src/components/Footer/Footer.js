@@ -123,8 +123,16 @@ function Footer() {
           </div>
         </div>
         <div class="footer-copyright">
-          <div class="container">
-            <p>© {new Date().getFullYear()} Cauvery cars</p>
+          <div class="container ">
+            <a
+              style={{
+                paddingLeft: "12px",
+              }}
+              class="white-text left"
+              href="https://serpenstech.com/"
+            >
+              © {new Date().getFullYear()} Cauvery cars
+            </a>
             <a class="red-text right" href="https://serpenstech.com/">
               powered by serpens technology
             </a>

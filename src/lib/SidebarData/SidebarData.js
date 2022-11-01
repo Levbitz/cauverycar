@@ -10,7 +10,7 @@ import { ImProfile } from "react-icons/im";
 export const SidebarData = [
   {
     title: "Maruti Suzuki",
-    categoryUrl: "maruti_suzuki",
+    categoryUrl: "/maruti_suzuki",
     icon: <IoBusiness />,
 
     subNav: [
